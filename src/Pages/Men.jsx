@@ -7,6 +7,7 @@ const Men = () => {
     const [data, setData] = useState([]);
     const [order, setOrder] = useState('asc');
     const [page, setPage] = useState(1);
+    const [loading, setloading] = useState(true)
 
 
     const fetchData = () => {
@@ -19,6 +20,7 @@ const Men = () => {
           }
       })
           .then((res) => setData(res.data))
+          setloading(false)
           .catch((err) => console.error(err));
   };
   useEffect(()=>{
@@ -26,7 +28,7 @@ const Men = () => {
   },[page,order])
   
 
-  return (
+  return loading ? <h1>Loading ...</h1> : (
     <>
     <Container>
        <Row>   
