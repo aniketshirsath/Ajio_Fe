@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
           <div className="col-md-6 text-md-end mb-3">
             <h5>Secure systems</h5>
-            <p>SSL 256 BIT Encryption</p>
+            <p>Made With 💜 Aniket .</p>
           </div>
         </div>
       </div>
