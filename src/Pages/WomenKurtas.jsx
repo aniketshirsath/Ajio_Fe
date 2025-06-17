@@ -10,7 +10,7 @@ const WomenKurtas = () => {
 
 
     const fetchData = () => {
-      axios.get('http://localhost:3000/women-kurtas', {
+      axios.get('https://ajio-be.onrender.com/women-kurtas', {
           params: {
               _page: page,
               _limit: 8,

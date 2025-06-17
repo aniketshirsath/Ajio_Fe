@@ -11,83 +11,83 @@ const Description = () => {
   const [desdata, setdesdata] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/men/${id}`)
+    axios.get(`https://ajio-be.onrender.com/men/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(` http://localhost:3000/men-shirts/${id}`)
+    axios.get(`https://ajio-be.onrender.com/men-shirts/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(` http://localhost:3000/men-pants/${id}`)
+    axios.get(`https://ajio-be.onrender.com/men-pants/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/men-tshirt/${id}`)
+    axios.get(`https://ajio-be.onrender.com/men-tshirt/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/women/${id}`)
+    axios.get(`https://ajio-be.onrender.com/women/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/women-kurtas/${id}`)
+    axios.get(`https://ajio-be.onrender.com/women-kurtas/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/women-tshirt/${id}`)
+    axios.get(`https://ajio-be.onrender.com/women-tshirt/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/women-sarees/${id}`)
+    axios.get(`https://ajio-be.onrender.com/women-sarees/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/kids/${id}`)
+    axios.get(`https://ajio-be.onrender.com/kids/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/kids-tops/${id}`)
+    axios.get(`https://ajio-be.onrender.com/kids-tops/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/kids-bag/${id}`)
+    axios.get(`https://ajio-be.onrender.com/kids-bag/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/kids-jacket/${id}`)
+    axios.get(`https://ajio-be.onrender.com/kids-jacket/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/face-wash/${id}`)
+    axios.get(`https://ajio-be.onrender.com/face-wash/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/perfumes/${id}`)
+    axios.get(`https://ajio-be.onrender.com/perfumes/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/beauty/${id}`)
+    axios.get(`https://ajio-be.onrender.com/beauty/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/shampoo/${id}`)
+    axios.get(`https://ajio-be.onrender.com/shampoo/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/home-kitchen/${id}`)
+    axios.get(`https://ajio-be.onrender.com/home-kitchen/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/wall-decor/${id}`)
+    axios.get(`https://ajio-be.onrender.com/wall-decor/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/photo-frames/${id}`)
+    axios.get(`https://ajio-be.onrender.com/photo-frames/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`http://localhost:3000/kitchen/${id}`)
+    axios.get(`https://ajio-be.onrender.com/kitchen/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
   }, [id])
@@ -105,7 +105,7 @@ const Description = () => {
       size: "M"
     };
 
-    axios.post("http://localhost:3000/cart", cartItem)
+    axios.post("https://ajio-be.onrender.com/cart", cartItem)
       .then(() => alert("✅ Added to cart successfully!"))
       .catch(err => console.log("❌ Error adding to cart:", err));
   };

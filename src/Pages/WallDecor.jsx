@@ -10,7 +10,7 @@ const WallDecor = () => {
 
 
     const fetchData = () => {
-      axios.get('http://localhost:3000/wall-decor', {
+      axios.get('https://ajio-be.onrender.com/wall-decor', {
           params: {
               _page: page,
               _limit: 8,

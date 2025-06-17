@@ -7,13 +7,13 @@ function CartPage() {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/cart")
+    axios.get("https://ajio-be.onrender.com/cart")
       .then(res => setCartItems(res.data))
       .catch(err => console.log("Error loading cart:", err));
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3000/cart/${id}`)
+    axios.delete(`https://ajio-be.onrender.com/cart/${id}`)
       .then(() => {
         setCartItems(prev => prev.filter(item => item.id !== id));
       })
@@ -28,7 +28,7 @@ function CartPage() {
 
     const updated = { ...item, qty: newQty };
 
-    axios.put(`http://localhost:3000/cart/${item.id}`, updated)
+    axios.put(`https://ajio-be.onrender.com/cart/${item.id}`, updated)
       .then(() => {
         setCartItems(prev => prev.map(i => i.id === item.id ? updated : i));
       })

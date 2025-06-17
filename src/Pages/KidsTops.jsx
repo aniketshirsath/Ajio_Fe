@@ -10,7 +10,7 @@ const KidsTops = () => {
 
 
     const fetchData = () => {
-      axios.get('http://localhost:3000/kids-tops', {
+      axios.get('https://ajio-be.onrender.com/kids-tops', {
           params: {
               _page: page,
               _limit: 8,

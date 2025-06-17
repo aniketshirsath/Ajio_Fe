@@ -10,7 +10,7 @@ const Kitchens = () => {
 
 
     const fetchData = () => {
-      axios.get('http://localhost:3000/kitchen', {
+      axios.get('https://ajio-be.onrender.com/kitchen', {
           params: {
               _page: page,
               _limit: 8,

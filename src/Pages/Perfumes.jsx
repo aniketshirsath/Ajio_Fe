@@ -10,7 +10,7 @@ const Perfumes = () => {
 
 
     const fetchData = () => {
-      axios.get('http://localhost:3000/perfumes', {
+      axios.get('https://ajio-be.onrender.com/perfumes', {
           params: {
               _page: page,
               _limit: 8,

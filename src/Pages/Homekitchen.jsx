@@ -10,7 +10,7 @@ const Homekitchen = () => {
 
 
     const fetchData = () => {
-      axios.get('http://localhost:3000/home-kitchen', {
+      axios.get('https://ajio-be.onrender.com/home-kitchen', {
           params: {
               _page: page,
               _limit: 8,
